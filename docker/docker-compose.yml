@@ -1,0 +1,32 @@
+version: '3'
+services:
+  db:
+    build: ./mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: do-well
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - do_well_db_volume:/var/lib/mysql
+      - "./mysql/sql:/docker-entrypoint-initdb.d"
+      - "./mysql/conf.d/:/etc/mysql/conf.d/"
+      - "./mysql/my.cnf:/etc/mysql/my.cnf"
+  api:
+    build:  ../api
+    volumes:
+      - ../api:/do-well
+      - do_well_api_volume:/project
+    ports:
+      - "9000:9000"
+    depends_on:
+      - db
+    stdin_open: true
+    tty: true
+  
+
+volumes:
+  do_well_db_volume:
+    driver: local
+  do_well_api_volume:
+    driver: local
