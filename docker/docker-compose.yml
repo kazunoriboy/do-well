@@ -23,6 +23,15 @@ services:
       - db
     stdin_open: true
     tty: true
+  web:
+    build: ../web
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../web/:/usr/src/app
+    ports:
+      - "3000:3000"
+    tty: true
   
 
 volumes:
