@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './css/style.scss';
 import Sidebar from './components/Sidebar';
 import TaskInput from './components/TaskInput';
 import TaskList from './components/TaskList';
