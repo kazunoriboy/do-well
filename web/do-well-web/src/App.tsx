@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar';
 import TaskInput from './components/TaskInput';
 import TaskList from './components/TaskList';
 import { Task } from './components/Types';
+
 
 const initialState: Task[] = [
   {
@@ -20,10 +22,11 @@ const App: React.FC = () => {
   const [ tasks, setTasks ] = useState(initialState)
 
   return (
-    <div>
+    <>
+      <Sidebar />
       <TaskInput setTasks={setTasks} tasks={tasks} />
       <TaskList setTasks={setTasks} tasks={tasks} />
-    </div>
+    </>
   )
 }
 
