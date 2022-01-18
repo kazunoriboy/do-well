@@ -22,11 +22,13 @@ const App: React.FC = () => {
   const [tasks, setTasks] = useState(initialState);
 
   return (
-    <>
+    <div className="f-wrapper">
       <Sidebar />
-      <TaskInput setTasks={setTasks} tasks={tasks} />
-      <TaskList setTasks={setTasks} tasks={tasks} />
-    </>
+      <main className="l-main">
+        <TaskInput setTasks={setTasks} tasks={tasks} />
+        <TaskList setTasks={setTasks} tasks={tasks} />
+      </main>
+    </div>
   );
 };
 
