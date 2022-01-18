@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Sidebar = () => {
   return (
@@ -8,7 +8,7 @@ const Sidebar = () => {
         <li className="l-sidebar__item">マイタスク</li>
       </ul>
     </aside>
-  )
-}
+  );
+};
 
 export default Sidebar;

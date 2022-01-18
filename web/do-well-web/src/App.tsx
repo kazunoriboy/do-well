@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './css/style.scss';
 import Sidebar from './components/Sidebar';
 import TaskInput from './components/TaskInput';
 import TaskList from './components/TaskList';
-import { Task } from './components/Types';
-
+import {Task} from './components/Types';
 
 const initialState: Task[] = [
   {
     id: 2,
     title: 'タスク2',
-    done: false
-  }, {
+    done: false,
+  },
+  {
     id: 1,
     title: 'タスク1',
-    done: false
-  }
-]
+    done: false,
+  },
+];
 
 const App: React.FC = () => {
-  const [ tasks, setTasks ] = useState(initialState)
+  const [tasks, setTasks] = useState(initialState);
 
   return (
     <>
@@ -27,7 +27,7 @@ const App: React.FC = () => {
       <TaskInput setTasks={setTasks} tasks={tasks} />
       <TaskList setTasks={setTasks} tasks={tasks} />
     </>
-  )
-}
+  );
+};
 
 export default App;
