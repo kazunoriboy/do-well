@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './css/style.scss';
-import Sidebar from './components/Sidebar';
-import TaskInput from './components/TaskInput';
-import TaskList from './components/TaskList';
-import {Task} from './components/Types';
+import Sidebar from './layouts/Sidebar';
+import TaskInput from './layouts/TaskInput';
+import TaskList from './layouts/TaskList';
+import {Task} from './layouts/Types';
 
 const initialState: Task[] = [
   {
