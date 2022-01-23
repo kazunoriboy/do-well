@@ -3,7 +3,7 @@ import React from 'react';
 function Sidebar() {
   return (
     <aside className="l-sidebar">
-      <div className="l-sidebar__header">
+      <div className="l-sidebar__header l-sidebar__inner">
         <div className="p-logo">do well</div>
         <div className="c-hamburgerMenu is-active">
           <span className="c-hamburgerMenu__bar" />
