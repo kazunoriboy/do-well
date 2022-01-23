@@ -1,0 +1,23 @@
+.p-navigation {
+  margin-top: 4rem;
+  border-bottom: 1px solid $gray;
+  padding-bottom: 2rem;
+  &Item {
+    padding: .5rem 2rem;
+    &:hover {
+      background-color: $gray;
+    }
+    &__icon {
+      width: 2.3rem;
+      color: $light-gray;
+      vertical-align: bottom;
+    }
+    &__text {
+      display: inline-block;
+      width: 100%;
+      margin-left: -2.3rem;
+      padding-left: 3.3rem;
+      line-height: 2.3rem;
+    }
+  }
+}

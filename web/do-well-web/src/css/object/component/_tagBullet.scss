@@ -1,0 +1,22 @@
+@mixin bulletShape {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.3rem; 
+  margin-right: 0.3rem;
+}
+
+.c-tagBullet {
+  &--red {
+    @include bulletShape();
+    background-color: $red;
+  }
+  &--blue {
+    @include bulletShape();
+    background-color: $blue;
+  }
+  &--green {
+    @include bulletShape();
+    background-color: $green;
+  }
+}

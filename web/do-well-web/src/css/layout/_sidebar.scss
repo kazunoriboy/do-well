@@ -1,4 +1,12 @@
 .l-sidebar {
-    width: 20rem;
+  width: 24rem;
+  padding: 2rem 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inner {
+    padding: 0 2rem;
+  }
 }
 

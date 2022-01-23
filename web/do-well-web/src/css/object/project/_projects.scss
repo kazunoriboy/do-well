@@ -1,0 +1,25 @@
+.p-projects {
+  padding: 1rem 0;
+  &Title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    &:hover {
+      background-color: $gray;
+    }
+  }
+  &List {
+    margin-top: 1rem;
+    &__item {
+      line-height: 2.3rem;
+    }
+    &__link {
+      padding: 0.5rem 2rem;
+      display: inline-block;
+      width: 100%;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+}
