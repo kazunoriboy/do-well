@@ -4,7 +4,7 @@ type Props = {
   color: string;
 }
 
-function ProjectList(project: Project) {
+const ProjectItem: React.FC<Props> = (project) => {
   return (
     <li className="p-projectsList__item">
       <a href="#" className="p-projectsList__link">
@@ -14,4 +14,4 @@ function ProjectList(project: Project) {
   );
 }
 
-export default ProjectList;
+export default ProjectItem;

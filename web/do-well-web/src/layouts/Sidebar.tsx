@@ -19,7 +19,7 @@ const projects = [
   }
 ]
 
-function Sidebar() {
+const Sidebar: React.FC = () => {
   return (
     <aside className="l-sidebar">
       <div className="l-sidebar__header l-sidebar__inner">
