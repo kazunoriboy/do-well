@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './css/style.scss';
+import '../css/style.scss';
 import Sidebar from '../layouts/Sidebar';
 import TaskInput from '../layouts/TaskInput';
 import TaskList from '../layouts/TaskList';
@@ -18,7 +18,7 @@ const initialState: Task[] = [
   },
 ];
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
   const [tasks, setTasks] = useState(initialState);
 
   return (
@@ -32,4 +32,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Home;
