@@ -1,4 +1,24 @@
 import React from 'react';
+import ProjectItem from './components/ProjectItem';
+import {Project} from './Types';
+
+const projects = [
+  {
+    id: 3,
+    title: 'プロジェクト3',
+    color: 'green'
+  },
+  {
+    id: 2,
+    title: 'プロジェクト2',
+    color: 'blue'
+  },
+  {
+    id: 1,
+    title: 'プロジェクト3',
+    color: 'red'
+  }
+]
 
 function Sidebar() {
   return (
@@ -57,21 +77,9 @@ function Sidebar() {
           <div className="p-projectsTitle__plusBtn">＋</div>
         </a>
         <ul className="p-projectsList">
-          <li className="p-projectsList__item">
-            <a href="#" className="p-projectsList__link">
-              <span className="c-tagBullet--red"></span>プロジェクト1
-            </a>
-          </li>
-          <li className="p-projectsList__item">
-            <a href="#" className="p-projectsList__link">
-              <span className="c-tagBullet--blue"></span>プロジェクト2
-            </a>
-          </li>
-          <li className="p-projectsList__item">
-            <a href="#" className="p-projectsList__link">
-              <span className="c-tagBullet--green"></span>プロジェクト3
-            </a>
-          </li>
+          {projects.map((project) => (
+            <ProjectItem project={project}></ProjectItem>
+          ))}
         </ul>
       </section>
     </aside>
