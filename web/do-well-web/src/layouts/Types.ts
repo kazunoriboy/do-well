@@ -3,9 +3,3 @@ export type Task = {
   title: string;
   done: boolean;
 };
-
-export type Project = {
-  id: number;
-  title: string;
-  color: string;
-}

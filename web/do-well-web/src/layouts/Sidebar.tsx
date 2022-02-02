@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectItem from './components/ProjectItem';
-import {Project} from './Types';
 
 const projects = [
   {
@@ -78,7 +77,11 @@ function Sidebar() {
         </a>
         <ul className="p-projectsList">
           {projects.map((project) => (
-            <ProjectItem project={project}></ProjectItem>
+            <ProjectItem
+              id={project.id}
+              title={project.title}
+              color={project.color}
+            />
           ))}
         </ul>
       </section>

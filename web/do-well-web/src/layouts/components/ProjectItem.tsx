@@ -1,4 +1,8 @@
-import { Project } from "../Types";
+type Props = {
+  id: number;
+  title: string;
+  color: string;
+}
 
 function ProjectList(project: Project) {
   return (
