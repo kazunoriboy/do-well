@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 1,
-    title: 'プロジェクト3',
+    title: 'プロジェクト1',
     color: 'red'
   }
 ]
