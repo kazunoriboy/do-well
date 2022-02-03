@@ -7,7 +7,7 @@ type Props = {
   handleDelete: (task: Task) => void;
 };
 
-const TaskItem: React.FC<Props> = ({task, handleDone, handleDelete}) => (
+const TaskItem: React.VFC<Props> = ({task, handleDone, handleDelete}) => (
   <li className={task.done ? 'done' : ''}>
     <input
       type="checkbox"

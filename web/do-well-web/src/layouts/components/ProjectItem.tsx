@@ -4,7 +4,7 @@ type Props = {
   color: string;
 }
 
-const ProjectItem: React.FC<Props> = (project) => {
+const ProjectItem: React.VFC<Props> = (project) => {
   return (
     <li className="p-projectsList__item">
       <a href="#" className="p-projectsList__link">
