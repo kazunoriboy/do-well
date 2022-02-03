@@ -20,6 +20,12 @@ const Main: React.VFC = () => {
   const [tasks, setTasks] = useState(initialState);
   return (
     <main className="l-main">
+      <div className="l-main__header">
+        <div className="c-pageTitle">Home</div>
+        <input type="text" className="c-searchBox" />
+        <div className="c-addButton">+</div>
+        <div className="c-userMenus"></div>
+      </div>
       <TaskInput setTasks={setTasks} tasks={tasks} />
       <TaskList setTasks={setTasks} tasks={tasks} />
     </main>
