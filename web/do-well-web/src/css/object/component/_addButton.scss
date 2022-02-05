@@ -1,0 +1,16 @@
+.c-addButton {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: $orange;
+  text-align: center;
+  position: relative;
+  &Icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5rem;
+    vertical-align: middle;
+  }
+}

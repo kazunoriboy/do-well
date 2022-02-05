@@ -34,7 +34,17 @@ const Main: React.VFC = () => {
           </svg>
           <input type="text" className="c-searchBoxInput" placeholder="Search" />
         </form>
-        <div className="c-addButton">+</div>
+        <div className="c-addButton">
+          <svg
+            className="c-addButtonIcon w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+          </svg>
+        </div>
         <div className="c-userMenus"></div>
       </div>
       <TaskInput setTasks={setTasks} tasks={tasks} />
