@@ -5,19 +5,19 @@ const projects = [
   {
     id: 3,
     title: 'プロジェクト3',
-    color: 'green'
+    color: 'green',
   },
   {
     id: 2,
     title: 'プロジェクト2',
-    color: 'blue'
+    color: 'blue',
   },
   {
     id: 1,
     title: 'プロジェクト1',
-    color: 'red'
-  }
-]
+    color: 'red',
+  },
+];
 
 const Sidebar: React.VFC = () => {
   return (
@@ -77,16 +77,12 @@ const Sidebar: React.VFC = () => {
         </a>
         <ul className="p-projectsList">
           {projects.map((project) => (
-            <ProjectItem
-              id={project.id}
-              title={project.title}
-              color={project.color}
-            />
+            <ProjectItem id={project.id} title={project.title} color={project.color} />
           ))}
         </ul>
       </section>
     </aside>
   );
-}
+};
 
 export default Sidebar;
