@@ -34,7 +34,7 @@ const Main: React.VFC = () => {
           </svg>
           <input type="text" className="c-searchBoxInput" placeholder="Search" />
         </form>
-        <div className="c-addButton">
+        <div className="c-addButton u-ml-2">
           <svg
             className="c-addButtonIcon w-6 h-6"
             fill="none"
