@@ -4,7 +4,7 @@ const DashBoard: React.VFC = () => {
       <h5 className="c-dateText">Sunday, Feburaly 6</h5>
       <h2 className="c-dashBoardMessage">Good evening</h2>
       <div className="c-stats">
-        <select name="period" id="" className="c-stats__period">
+        <select name="period" className="c-stats__period">
           <option value="weekly">My week</option>
           <option value="monthly">My month</option>
         </select>
