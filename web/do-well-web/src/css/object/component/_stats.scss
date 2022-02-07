@@ -20,4 +20,8 @@
       background-color: rgba($color: $white, $alpha: 0.05);
     }
   }
+  &__divider {
+    border-right: 1px solid #444;
+    height: 2rem;
+  }
 }

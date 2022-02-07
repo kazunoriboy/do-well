@@ -8,8 +8,8 @@ const Dashboard: React.VFC = () => {
           <option value="weekly">My week</option>
           <option value="monthly">My month</option>
         </select>
-        <div className="c-stats__divider"></div>
-        <div className="c-stats__completedTasks">0 tasks completed</div>
+        <div className="c-stats__divider u-ml-1"></div>
+        <div className="c-stats__completedTasks u-ml-1">0 tasks completed</div>
       </div>
     </div>
   )
