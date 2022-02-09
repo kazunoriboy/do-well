@@ -12,7 +12,7 @@ const Dashboard: React.VFC = () => {
         <div className="c-stats__completedTasks u-ml-1">0 tasks completed</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Dashboard;
