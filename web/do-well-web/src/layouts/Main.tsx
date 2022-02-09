@@ -4,6 +4,7 @@ import TaskList from '../layouts/TaskList';
 import {Task} from './Types';
 import MainHeader from './components/MainHeader';
 import Dashboard from './components/Dashboard';
+import MainContaint from './components/MainContaint';
 
 const initialState: Task[] = [
   {
@@ -24,6 +25,7 @@ const Main: React.VFC = () => {
     <main className="l-main">
       <MainHeader />
       <Dashboard />
+      <MainContaint />
       <TaskInput setTasks={setTasks} tasks={tasks} />
       <TaskList setTasks={setTasks} tasks={tasks} />
     </main>
