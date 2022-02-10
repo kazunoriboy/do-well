@@ -3,7 +3,7 @@ import ProjectBoard from './ProjectBoard';
 
 const MainContaint: React.VFC = () => {
   return (
-    <div className="p-mainContaint l-inner">
+    <div className="p-mainContaint f-inner">
       <TaskBoard />
       <ProjectBoard />
     </div>
