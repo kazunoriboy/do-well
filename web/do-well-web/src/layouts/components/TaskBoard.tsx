@@ -3,8 +3,8 @@ const TaskBoard: React.VFC = () => {
     <div className="p-taskBoard">
       <div className="p-taskBoard__title">
         My Priorities
-      </div>
-      <ul className="p-taskStatusTab">
+      </h3>
+      <ul className="p-taskStatusTab u-mt-1">
         <li className="p-taskStatusTab__item">Upcoming</li>
         <li className="p-taskStatusTab__item">Overdue</li>
         <li className="p-taskStatusTab__item">Completed</li>
