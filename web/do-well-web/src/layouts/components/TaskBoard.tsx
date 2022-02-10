@@ -1,5 +1,19 @@
 const TaskBoard: React.VFC = () => {
-  return <div className="p-taskBoard"></div>;
+  return (
+    <div className="p-taskBoard">
+      <div className="p-taskBoard__title">
+        My Priorities
+      </div>
+      <ul className="p-taskStatusTab">
+        <li className="p-taskStatusTab__item">Upcoming</li>
+        <li className="p-taskStatusTab__item">Overdue</li>
+        <li className="p-taskStatusTab__item">Completed</li>
+      </ul>
+      <ul className="p-taskList">
+        <li className="c-taskItem">LPIC学習<span className="c-taskItem__label">プライベート</span><span className="c-taskItem__due">Tommorow</span></li>
+      </ul>
+    </div>
+  );
 };
 
 export default TaskBoard;
