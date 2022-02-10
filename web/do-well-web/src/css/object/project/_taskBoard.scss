@@ -1,0 +1,11 @@
+.p-taskBoard {
+  width: 49%;
+  background-color: $bgc-gray;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  padding: 2rem 0;
+  &__title {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+}

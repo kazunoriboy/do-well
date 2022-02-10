@@ -1,7 +1,7 @@
 const TaskBoard: React.VFC = () => {
   return (
     <div className="p-taskBoard">
-      <div className="p-taskBoard__title">
+      <h3 className="p-taskBoard__title">
         My Priorities
       </h3>
       <ul className="p-taskStatusTab u-mt-1">
