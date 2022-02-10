@@ -1,0 +1,12 @@
+.p-taskStatusTab {
+  display: flex;
+  border-bottom: 1px solid $gray;
+  padding-left: 2rem;
+  &__item {
+    margin-left: 1rem;
+    padding-bottom: .5rem;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
