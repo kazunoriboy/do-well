@@ -3,10 +3,15 @@
   border-bottom: 1px solid $gray;
   padding-left: 2rem;
   &__item {
+    color: $light-gray;
     margin-left: 1rem;
     padding-bottom: .5rem;
     &:first-of-type {
       margin-left: 0;
+    }
+    &.is-active {
+      color: $light-gray;
+      border-bottom: 2px solid $white;
     }
   }
 }
